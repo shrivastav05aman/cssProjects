@@ -1,0 +1,487 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    transition: all .5s;
+}
+
+
+header{
+    height: 55px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .left{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 70px;
+}
+
+header .left img{
+    height: 30px;
+}
+
+.left a{
+    color: rgb(108, 102, 102);
+    text-decoration: none;
+    font-size: 12px;
+    margin: 0px 10px;
+    display: block;
+    height: 40px;
+    padding: 10px;
+    width: fit-content;
+}
+
+.left a:focus, .left a:hover, .right a:focus, .right a:hover{
+    outline: 1px dashed rgb(108, 102, 102);
+}
+
+.left a:hover, .right a:hover{
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    text-decoration-thickness: 1.5px;
+}
+
+header .right{
+    margin-right: 70px;
+    font-size: 12px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+}
+
+.right a{
+    color: rgb(108, 102, 102);
+    margin: 0;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.right i{
+    font-size: 15px;
+    color: rgb(108, 102, 102);
+    margin-left: 0;
+    margin-right: 10px;
+}
+
+header .right i:nth-child(4){
+    transform: rotate(90deg);
+}
+
+
+
+.fa-user{
+    border: 1px solid rgb(108, 102, 102);
+    border-radius: 100%;
+    padding: 10px;
+    position: relative;
+}
+
+.fa-user::after{
+    content: '+';
+    position: absolute;
+    color: rgb(108, 102, 102);
+    right: 12%;
+    bottom: 12%;
+    font-size: 6px;
+}
+
+.copilot{
+    height: 500px;
+    background-image: url("./images/Copilot.avif");
+    background-size:cover;
+    position: relative;
+}
+
+.copilot div{
+    background-color: #fff;
+    width: 650px;
+    height: 350px;
+    position: absolute;
+    top: 50px;
+    left: 100px;
+    padding: 50px;
+}
+
+.copilot div > *{
+    margin: 15px 0;
+}
+
+.copilot div .heading, .grid .heading{
+    font-size: 20px;
+    background-color: orange;
+    width: fit-content;
+    padding: 5px 10px;
+}
+
+.copilot div h1{
+    font-size: 2rem;
+    letter-spacing: 1px;
+}
+
+.copilot div .info{
+    font-size: 15px;
+    color: rgb(108, 102, 102);
+    letter-spacing: .5px;
+}
+
+.copilot div button{
+    width: 125px;
+    padding: 10px;
+    background-color: rgb(81, 114, 232);
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    border: none;
+}
+
+.copilot div button:hover{
+    background-color: rgb(81, 114, 232,0.9);
+}
+
+.navigation{
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navigation i{
+    margin: 0px 20px;
+    cursor: pointer;
+}
+
+.fa-pause{
+    border: 1px solid rgb(108, 102, 102);
+    padding: 5px;
+    border-radius: 100%;
+}
+
+.fa-pause:hover{
+    background-color: black;
+    color: #fff;
+    border: none;
+}
+
+.fa-circle{
+    font-size: 10px;
+    border-radius: 100%;
+}
+
+.fa-circle:hover{
+    background-color: black;
+}
+
+.fa-angle-left, .fa-angle-right{
+    font-size: 18px;
+}
+
+.fa-angle-left:hover{
+    transform: translateX(-5px);
+}
+
+.fa-angle-right:hover{
+    transform: translateX(5px);
+}
+
+.links{
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.link{
+    text-align: center;
+    margin: 0 20px;
+}
+
+.link>*{
+    display: block;
+}
+
+.link i{
+    font-size: 30px;
+    margin-bottom: 5px;
+}
+
+.link a{
+    color: rgb(81, 114, 232, 0.9);
+    text-decoration: underline;
+    text-decoration-color: rgb(81, 114, 232, 0.9);
+    outline: none;
+}
+
+.gridimagessection{
+    margin: 50px auto;
+    position: relative;
+}
+
+.gridimagessection > *{
+    width: 90vw;
+    margin: 50px auto;
+}
+
+.gridsection{
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 20px;
+}
+
+.grid{
+    position: relative;
+    box-shadow: 0 0 2px rgb(0, 0, 0,0.5);
+}
+
+.grid > *{
+    margin: 20px;
+}
+
+
+.grid img{
+    margin:0;
+    width: 100%;
+}
+.grid h1{
+    margin-top: 50px;
+    font-size: 30px;
+}
+
+.grid .info{
+    color: black !important;
+}
+
+.grid button{
+    width: fit-content;
+    padding: 10px;
+    background-color: rgb(81, 114, 232);
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    border: none;
+}
+
+.grid button:hover{
+    background-color: rgb(81, 114, 232, 0.9);
+}
+
+.grid p, .grid i{
+    color: rgb(81, 114, 232);
+}
+
+.grid i:hover{
+    transform: translateX(5px);
+}
+
+.end{
+    position: absolute;
+    bottom: 0;
+}
+
+.imagesection{
+    margin: 50px auto;
+    height: 500px;
+    background-image: url("./images/spyro.avif");
+    background-size: cover;
+    color:  #fff;
+    position: relative;
+}
+
+.imagesection div{
+    position: absolute;
+    top: 50px;
+    left: 100px;
+    width: 500px;
+    padding: 40px;
+    box-sizing: border-box;
+}
+
+.imagesection div > *{
+    margin: 10px 0px;
+}
+
+.imagesection div .heading{
+    background-color: lightgreen;
+    color: black;
+    width: fit-content;
+    padding: 10px;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.imagesection div .heading+h1{
+    font-size: 40px;
+}
+
+.imagesection div button{
+    width: fit-content;
+    padding: 10px;
+    border: none;
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 5px;
+    float: left;
+}
+
+.imagesection div button+p{
+    font-weight: bold;
+    float: right;
+    position: relative;
+    top: 10px;
+}
+
+.imagesection div i:hover{
+    transform: translateX(5px);
+}
+
+.gridimagessection h1{
+    grid-column: 1/5;
+}
+
+.grid .heading,.grid .heading+h1{
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.follow{
+    display: flex;
+    width: 200px;
+    position: absolute;
+    left: calc(100% - 95vw);
+    justify-content: space-between;
+    align-items: center;
+    color: rgb(108, 102, 102);
+}
+
+.follow p{
+    margin-right: 10px;
+}
+
+.follow i{
+    font-size: 1.2em;
+}
+
+#top{
+    display: inline-block;
+    margin: 50px 0;
+    position: relative;
+    left: 90vw;
+    padding: 10px;
+    border: none;
+    background-color: rgb(211, 211, 211, 0.5);
+    outline: none;
+}
+
+#top:hover{
+    background-color: #fff;
+}
+
+#top p{
+    display: inline;
+    font-size: 15px;
+    font-weight: 600;
+    margin-left: 10px;
+}
+
+footer{
+    background-color: rgb(211, 211, 211,0.5);
+    color: rgb(71, 63, 63);
+    padding: 40px;
+}
+
+.top{
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+}
+
+.footerlinks > *{
+    margin: 15px 0;
+}
+
+.footerlinks p{
+    font-size: 10px;
+    cursor: pointer;
+}
+
+.footerlinks p:hover{
+    text-decoration: underline;
+}
+
+.bottom{
+    margin-top: 20px;
+    display: flex;
+    height: 50px;
+    align-items: center;
+}
+
+.bottom > *{
+    width: 50%;
+    display: flex;
+    align-items: center;
+}
+
+.left > *, .right > *{
+    margin: 0px 10px;
+}
+
+.left p, .right p{
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.left p:hover,
+.right p:hover{
+    text-decoration: underline;
+}
+
+.fa-globe{
+    font-size: 18px;
+}
+
+.left i:first-child{
+    margin-left: 0;
+}
+
+.left button{
+    height: 20px;
+    width: 50px;
+    padding: 3px;
+    font-size: 12px;
+    border-radius: 10px;
+    border: none;
+    background-color: skyblue;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.left button i{
+    margin: 0px 2px;
+}
+
+.left button hr{
+    transform: rotate(120deg);
+    width: 20px;
+    border: 1px solid #fff;
+}
+
+.right{
+    justify-content: flex-end;
+}
+
+.right p:last-child:hover{
+    text-decoration: none;
+}
+
+.right p:last-child{
+    margin-right: 0;
+}
