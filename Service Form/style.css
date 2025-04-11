@@ -1,0 +1,147 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(121, 113, 113);
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    background-image: linear-gradient(to left, rgb(237, 35, 237), rgb(44, 180, 234));
+}
+
+form{
+    border: 1px solid white;
+    width: 400px;
+    height: 700px;
+    background-color: #fff;
+    border-radius: 5px;
+    color: #000;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding: 20px 40px;
+}
+
+h1{
+    text-align: center;
+    font-size: 3em;
+    color: black;
+}
+
+form .input-container{
+    margin: 15px 0px;
+    width: 100%;
+    position: relative;
+}
+
+form .input-container p{
+    color: rgb(121, 113, 113);
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+form .input-container input{
+    width: 100%;
+    margin: 5px 0;
+    padding: 10px;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid rgb(121, 113, 113);
+    font-size: 20px;
+}
+
+form .input-container label{
+    position: absolute;
+    left: 10px;
+    pointer-events: none;
+    bottom: 18px;
+    font-size: 20px;
+}
+
+form .input-container input:focus{
+    border: 1px solid rgb(237, 35, 237);
+    border-radius: 3px;
+}
+
+input:focus~label{
+    top: 25px;
+    font-size: 15px;
+    transition: all .5s;
+    background-color: #fff;
+    padding: 0 8px;
+    color: rgb(121, 113, 113);
+    height: fit-content;
+}
+
+form .input-container select{
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid rgb(121, 113, 113);
+    padding: 15px;
+    font-size: 18px;
+    color: rgb(121, 113, 113);
+    appearance: none;
+    outline: none;
+    position: relative;
+}
+
+
+form .input-container select+i{
+    position: absolute;
+    right: 5px;
+    top: 45px;
+}
+
+form .input-container select+i+i {
+    position: absolute;
+    right: 5px;
+    top: 38px;
+}
+
+form .input-container textarea{
+    padding: 10px;
+    width: 100%;
+    height: 100px;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid rgb(121, 113, 113);
+    font-size: 18px;
+    transition: all .5s;
+}
+
+form .input-container textarea~label{
+    position: absolute;
+    top: 35px;
+    pointer-events: none;
+    transition: all .5s;
+}
+
+form .input-container textarea:focus~label {
+    top: 20px;
+    font-size: 15px;
+    padding: 0 8px;
+    background-color: #fff;
+    height: fit-content;
+}
+
+form .input-container textarea:focus {
+    border: 1px solid rgb(237, 35, 237);
+    border-radius: 3px;
+}
+
+button{
+    display: block;
+    margin: auto;
+    width: 100%;
+    padding: 12px;
+    border-radius: 25px;
+    border: none;
+    background-image: linear-gradient(to left, rgb(237, 35, 237), rgb(44, 180, 234));
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+}
